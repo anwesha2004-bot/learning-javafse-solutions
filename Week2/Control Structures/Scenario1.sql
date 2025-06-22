@@ -85,7 +85,7 @@ BEGIN
     SET InterestRate = cust.InterestRate - 1
     WHERE LoanID = cust.LoanID;
 
-    DBMS_OUTPUT.PUT_LINE('Interest discount applied for: ' || cust.Name || 
+    DBMS_OUTPUT.PUT_LINE('✅ Interest discount applied for: ' || cust.Name || 
                          ' | New Interest Rate: ' || (cust.InterestRate - 1));
   END LOOP;
 
@@ -132,7 +132,7 @@ BEGIN
     SET InterestRate = cust.InterestRate - 1
     WHERE LoanID = cust.LoanID;
 
-    DBMS_OUTPUT.PUT_LINE(' Interest discount applied for: ' || cust.Name || 
+    DBMS_OUTPUT.PUT_LINE('✅ Interest discount applied for: ' || cust.Name || 
                          ' | New Interest Rate: ' || (cust.InterestRate - 1));
   END LOOP;
 
