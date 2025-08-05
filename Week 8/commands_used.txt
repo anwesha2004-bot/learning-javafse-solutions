@@ -1,0 +1,95 @@
+git --version
+git config --global user.name "Anwesha Mitra"
+git config --global user.email "mitraanwesha810@gmail.com"
+git config --global core.editor "notepad.exe"
+git config --global core.editor
+
+cd ~/Desktop
+mkdir "Week 8"
+cd "Week 8"
+
+git init
+notepad welcome.txt   # or use any text editor to create the file
+git status
+git add welcome.txt
+git commit            # Added welcome.txt file for Week 8 Git Lab
+git status
+
+git add commands_used.txt
+git commit -m "Added commands_used.txt with Git commands"
+git remote add origin https://github.com/anwesha2004-bot/learning-javafse-solutions.git
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+echo "This is a log file" > debug.log
+mkdir log
+echo "Inside log folder" > log/sample.txt
+notepad .gitignore
+
+git status
+git add .gitignore
+git commit -m "Added .gitignore to ignore .log files and log folder"
+git push
+
+
+
+git checkout -b GitNewBranch         # Create and switch to new branch
+git branch                           # List all local branches
+git branch -r                        # List remote branches
+git status                           # Check status in new branch
+git add branch_lab.txt               # Add new file in branch
+git commit -m "Added branch_lab.txt for Git branching exercise"  # Commit in branch
+git checkout main                    # Switch back to main branch
+git merge GitNewBranch               # Merge new branch into main
+git branch -d GitNewBranch           # Delete branch after merge
+git log --oneline --graph --decorate  # View merge history
+# Create a new branch
+git checkout -b GitWork
+
+
+notepad hello.xml
+
+
+git add hello.xml
+git commit -m "Added hello.xml in GitWork branch"
+
+
+git checkout main
+notepad hello.xml
+
+
+git add hello.xml
+git commit -m "Added different hello.xml in main"
+
+
+git log --oneline --graph --decorate --all
+
+
+git merge GitWork
+
+
+
+git add hello.xml
+git commit -m "Resolved merge conflict in hello.xml"
+
+
+notepad .gitignore
+
+
+git add .gitignore
+git commit -m "Added backup file pattern to .gitignore"
+
+
+git branch -d GitWork
+
+git log --oneline --graph --decorate
+
+git checkout main
+
+
+git pull origin main
+
+git branch -a
+
+
+git push origin main
+
